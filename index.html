@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn From Home</title>
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #1a3a2a; /* Deep green canvas background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .landing-card {
+            background: linear-gradient(135deg, #1b5e3a 0%, #16482e 100%);
+            width: 100%;
+            max-width: 430px;
+            border-radius: 30px;
+            padding: 40px 24px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Top Badge Area */
+        .top-badge {
+            background-color: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #e0e0e0;
+            margin-bottom: 35px;
+        }
+
+        .top-badge svg {
+            fill: #ffd700;
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Hero Heading */
+        .main-heading {
+            font-size: 38px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            letter-spacing: -0.5px;
+        }
+
+        .highlight-text {
+            color: #ffbc00; /* Vibrant gold-orange color */
+            display: block;
+            margin: 5px 0;
+        }
+
+        /* Paragraph Text */
+        .description-text {
+            font-size: 15px;
+            color: #b3cbbd;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-weight: 400;
+            padding: 0 10px;
+        }
+
+        /* Telegram CTA Button */
+        .telegram-btn {
+            background-color: #ffffff;
+            color: #1b5e3a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 50px;
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .telegram-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: #1b5e3a;
+        }
+
+        /* Lower Metrics Dashboard */
+        .stats-container {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            padding: 30px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 15px;
+        }
+
+        .stat-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffbc00;
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #8fae9c;
+            margin-top: 6px;
+            font-weight: 400;
+        }
+
+        /* Numeric Star Layout */
+        .rating-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffbc00;
+            line-height: 1.2;
+        }
+
+        /* Trust Badge Component */
+        .genuine-badge {
+            background-color: rgba(255, 255, 255, 0.08);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #ffffff;
+            display: inline-block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="landing-card">
+        
+        <!-- Top Status Bar Info -->
+        <div class="top-badge">
+            <svg viewBox="0 0 24 24"><path d="M19 11h-6V3l-7 10h6v8z"/></svg>
+            1000+ Active Members Earning Daily
+        </div>
+
+        <!-- Main Banner Header -->
+        <h1 class="main-heading">
+            Earn <span class="highlight-text">₹23,500–45,000</span> Monthly from Home
+        </h1>
+
+        <!-- Middle Body Copy -->
+        <p class="description-text">
+            India's trusted handwriting work platform. No experience needed. Materials delivered to your door. Start earning this week!
+        </p>
+
+        <!-- Telegram Action Link Configuration -->
+        <!-- CHANGE LINK HERE: Replace the URL inside href="..." with your channel link -->
+        <a href="https://t.me" class="telegram-btn" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.47-.52-.17L7.69 13.38l-4.11-1.28c-.9-.28-.92-.9.19-1.33l16.1-6.2c.74-.27 1.39.17 1.15 1.16l-2.74 12.91c-.2.92-.75 1.15-1.52.72l-4.18-3.08-2.02 1.95c-.22.22-.41.41-.83.41z"/></svg>
+            JOIN TELEGRAM CHANNEL
+        </a>
+
+        <!-- Bottom Proof / Trust Metrics Section -->
+        <div class="stats-container">
+            
+            <div class="stat-box">
+                <span class="stat-number">1000+</span>
+                <span class="stat-label">Active Members</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-number">50L+</span>
+                <span class="stat-label">Total Paid Out</span>
+            </div>
+
+            <div class="stat-box">
+                <div class="rating-wrapper">
+                    <span>4.9</span>
+                    <span style="font-size: 22px; margin-top: -2px;">★</span>
+                </div>
+                <span class="stat-label">User Rating</span>
+            </div>
+
+            <div class="stat-box" style="justify-content: center;">
+                <span class="genuine-badge">100% Genuine</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
